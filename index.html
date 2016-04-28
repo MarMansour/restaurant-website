@@ -2,69 +2,106 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700,300" rel="stylesheet">
   <title>Savoir Fare</title>
+  <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700,300" rel="stylesheet">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <link href="css/main.css" rel="stylesheet">
 </head>
 <body>
 
 
-  <header>
-    <img class="logo" src="images/savoir-fare-logo.svg" alt="">
+  <header class="masthead">
+    <h1><img class="logo" src="images/savoir-fare-logo.svg" alt=""></h1>
     <nav>
-      <ul>
-        <li><a href="#">Daily Menu</a></li>
-        <li><a href="#">Student Chefs</a></li>
-        <li><a href="#">Nutrition</a></li>
-        <li><a href="#">Contact</a></li>
+      <input type="checkbox" class="nav-check" id="nav-check">
+       <label class="nav-label" for="nav-check">
+         <img class="nav-icon" src="images/nav-icon-savoirfare.svg" alt="Open Navigation">
+       </label>
+      <ul class="nav">
+        <li><a href="Daily Menu">Daily Menu</a></li>
+        <li><a href="Student Chefs">Student Chefs</a></li>
+        <li><a href="Nutrition">Nutrition</a></li>
+        <li><a href="Contact">Contact</a></li>
       </ul>
     </nav>
   </header>
 
-  <section class="main-page">
-    <img src="images/placeholder-16by9.svg" alt="">
-    <div>
-      <h1>Student Made Food For Student Budgets</h1>
-      <h2>Grab a Healthy Bite to Eat</h2>
-      <a class="btn btn-primary btn-big" href="#menu">Menu</a>
+<main>
+
+  <div class="banner">
+    <img class="img-flex" src="images/placeholder-16by9.svg" alt="">
+    <div class="figure">
+      <div class="content">
+        <h2>Student Made Food for Student Budgets.</h2>
+        <p>Grab a Healthy Bite to Eat!</p>
+        <a class="btn btn-ghost btn-big" href="Daily Menu">MENU</a>
+      </div>
     </div>
-  </section>
+  </div>
 
 
   <section class="daily-menu">
     <div class="wrapper">
-      <h2>Daily Menu</h2>
-      <img src="images/placeholder-16by9.svg" alt="">
-        <div>
-          <h2>Date</h2>
-            <p> Menu Item, description</p>
-          <h2>Date</h2>
-            <p>Menu Item, description</p>
+      <img class="first-menu-img" src="images/placeholder-2by3.svg" alt="">
+        <div class="daily-menu-content">
+          <h2>Daily Menu</h2>
+            <p><strong>Apr. 25 - 30</strong></p>
+            <p>Chicken Leg Ballantine Stuffed with Mushroom Duxelle</p>
+            <p>Chicken Fricasse</p>
+            <p>BAKING EXAMS - TBA</p>
         </div>
-      <img src="images/placeholder-16by9.svg" alt="">
+      <img class="second-menu-img" src="images/placeholder-2by3.svg" alt="">
     </div>
   </section>
 
   <section class="student-chefs">
-    <h2>Student Chefs</h2>
-    <img src="images/placeholder-16by9.svg" alt="">
-      <div class="info-card">
-        <img src="images/placeholder-circle.svg" alt="">
-        <p>Name Here</p>
-      </div>
-      <div class="info-card">
-        <img src="images/placeholder-circle.svg" alt="">
-        <p>Name Here</p>
-      </div>
-      <div class="info-card">
-        <img src="images/placeholder-circle.svg" alt="">
-        <p>Name Here</p>
-      </div>
-  </section>
+    <ul class="card-group">
+      <li>
+        <div class="card-img">
+          <img src="images/placeholder-2by3.svg" alt="">
+        </div>
+        <div class="card-body">
+          <h2>The Quest for Anderon</h2>
+          <h3>Tabatha R. Barrett</h3>
+          <p>A fun & engaging kids book that harkens back to classic fantasy quest stories.</p>
+        </div>
+        <div class="btn">
+          <a class="btn-small" href="#">Read now</a>
+        </div>
+      </li>
+    </ul>
 
-  <section class="student-chefs">
+    <ul class="card-group two">
+      <li>
+        <div class="card-img">
+          <img src="images/placeholder-2by3.svg" alt="">
+        </div>
+        <div class="card-body">
+          <h2>Dinosaur Knights</h2>
+          <h3>Thomas S. Hedegaard</h3>
+          <p>Aliens land on Earth in the disant past and ride dinosaurs. It's about as awesome as it gets.</p>
+        </div>
+        <div class="btn">
+          <a class="btn-small" href="#">Read now</a>
+        </div>
+      </li>
+    </ul>
 
+    <ul class="card-group three">
+      <li>
+        <div class="card-img">
+          <img src="images/placeholder-2by3.svg" alt="">
+        </div>
+        <div class="card-body">
+          <h2>The Black Dragon</h2>
+          <h3>Hana Čejková</h3>
+          <p>An action-packed middle-grade interactive story adventure with a plucky hero.</p>
+        </div>
+        <div class="btn">
+          <a class="btn-small" href="#">Read now</a>
+        </div>
+      </li>
+    </ul>
   </section>
 
   <section class="nutrition">
@@ -78,6 +115,8 @@
   <footer>
 
   </footer>
+
+</main>
 
 </body>
 </html>
