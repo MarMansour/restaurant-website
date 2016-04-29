@@ -19,8 +19,6 @@ html {
 
 body {
   margin: 0;
-	min-width: 240px;
-
 }
 
 header {
@@ -90,7 +88,6 @@ margin: 0;
 }
 
 .banner {
-	overflow: hidden;
 	position: relative;
   max-height: 500px;
 	z-index: 1;
@@ -111,8 +108,6 @@ margin: 0;
 .content {
 	float: left;
 	width: 100%;
-	-webkit-transform: translate (-50%, -50%);
-	transform: translate (-50%, -50%);
 	position: absolute;
 	display: inline-block;
 	text-align: left;
