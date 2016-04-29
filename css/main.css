@@ -154,9 +154,149 @@ margin: 0;
 	display: inline-block;
 }
 
+.student-chefs {
+	color: #093;
+}
+
+.student-chefs h2 {
+  font-weight: 300;
+	text-align: center;
+}
+
+.student-chefs h3 {
+  font-weight: 700;
+}
+
+.student-chefs h4 {
+	font-weight: 300;
+	font-style: italic;
+}
+
+.student-chefs img {
+  display: block;
+  width: 100px;
+  margin: auto;
+}
+
+.card-group {
+  display: inline-block;
+  float: left;
+  width: 100%;
+  margin: 0;
+  padding: 1em;
+  list-style-type: none;
+  background-color: #e2e2e2;
+  border-left: 1px solid #000;
+  border-right: 0.5px solid #000;
+}
+
+.two {
+  background-color: #ccc;
+}
+
+.three {
+  background-color: #aaa;
+}
+
+.img-card {
+  display: inline-block;
+  width: 64px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.student-chefs .btn {
+  display: inline-block;
+  padding: 0.4em 0.75em 0.3em;
+  background-color: transparent;
+  border-radius: 8px;
+  border: 3px solid #fff;
+  color: #093;
+  font-size: 1.125rem;
+  text-decoration: none;
+}
+
+.student-chefs .btn-ghost {
+  background-color: transparent;
+  color: #093;
+}
+
+.student-chefs .btn-ghost:hover {
+	  background-color: #093;
+	  border-color: #093;
+	  color: #fff;
+}
+
+.nutrition h2 {
+	font-weight: 300;
+	color: #093;
+	text-align: center;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.icon-group {
+  margin: 0;
+  padding: 0;
+
+  list-style-type: none;
+  text-align: center;
+}
+
+.icon-group-item {
+  display: inline-block;
+  margin: .3em;
+  max-width: 25em;
+  padding: .5em;
+  width: calc(100% - .6em);
+
+  background-color: #fff;
+  border: 3px solid #093;
+  border-radius: 80px;
+
+  color: #333;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.icon-group-image {
+  display: inline-block;
+  margin-right: .4em;
+  width: 64px;
+  vertical-align: middle;
+}
+
+.icon-group-body {
+  display: inline-block;
+  width: calc(100% - 64px - .8em);
+  vertical-align: middle;
+}
+
+.icon-group-title {
+  display: block;
+}
+
+footer {
+	height: 80px;
+	background-color: #093;
+}
+
+small {
+	color: #fff;
+	padding: 1rem;
+	margin-top: 1rem;
+}
+
 
 @media only screen and (min-width: 25em) {
 
+}
 
 @media only screen and (min-width: 38em) {
 
