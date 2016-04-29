@@ -19,6 +19,8 @@ html {
 
 body {
   margin: 0;
+	min-width: 240px;
+
 }
 
 header {
@@ -88,9 +90,10 @@ margin: 0;
 }
 
 .banner {
-	display: inline-block;
+	overflow: hidden;
 	position: relative;
   max-height: 500px;
+	z-index: 1;
 }
 
 .banner h2 {
@@ -106,23 +109,30 @@ margin: 0;
 }
 
 .content {
+	float: left;
+	width: 100%;
+	-webkit-transform: translate (-50%, -50%);
+	transform: translate (-50%, -50%);
 	position: absolute;
-	display: block;
+	display: inline-block;
 	text-align: left;
+	min-width: 300px;
+	z-index: 100;
 }
 
-.figure {
+.banner .figure {
   width: 100%;
   max-width: 45rem;
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translateY(-50%) translateX(-50%);
-  z-index: 2;
+  transform: translateY(-50%);
+	transform: translateX(-50%);
+  z-index: 500;
   padding: 0 1rem;
 }
 
-.img-flex {
+.banner .img-flex {
   display: block;
   width: 100%;
   padding: 0;
@@ -152,6 +162,7 @@ margin: 0;
 
 .daily-menu-content {
 	display: inline-block;
+	padding: 4rem;
 }
 
 .student-chefs {
@@ -293,6 +304,34 @@ small {
 	margin-top: 1rem;
 }
 
+.contact header {
+  max-height: 500px;
+  overflow: hidden;
+	position: relative;
+}
+
+.contact
+.banner-contact-content {
+  display: inline-block;
+  position: absolute;
+  left: 50%;
+  bottom: .8em;
+  transform: translateX(-50%);
+  z-index: 2;
+  width: 100%;
+  max-width: 45em;
+  margin: 1em;
+  padding: 1em 0 0 0;
+}
+
+.contact .img-flex {
+  display: block;
+  width: 100%;
+}
+
+.contact body {
+  margin: 0;
+}
 
 @media only screen and (min-width: 25em) {
 
@@ -309,7 +348,7 @@ small {
 
 @media only screen and (min-width: 60em) {
 
-  html {
+	html {
     font-size: 120%;
     line-height: 1.5;
   }
@@ -370,5 +409,8 @@ small {
 }
 
 @media only screen and (min-width: 90em) {
+	html {
+		font-size: 130%;
+	}
 
 }
