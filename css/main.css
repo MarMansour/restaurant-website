@@ -5,7 +5,7 @@
 @viewport { width: device-width; scale: 1; }
 
 html {
-	box-sizing: border-box;
+  box-sizing: border-box;
   -moz-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
@@ -14,7 +14,7 @@ html {
 }
 
 *, *::before, *::after {
-	box-sizing: inherit;
+  box-sizing: inherit;
 }
 
 body {
@@ -23,58 +23,58 @@ body {
 
 header {
   padding: .5rem 0;
-	margin-bottom: 1rem;
+  margin-bottom: 1rem;
   background-color: #fff;
   text-align: right;
 }
 
 nav a:hover {
-	background-color: #093;
-	color: #fff;
+  background-color: #093;
+  color: #fff;
 }
 
 .masthead {
-	display: block;
-	padding: 1rem;
+  display: block;
+  padding: 1rem;
 }
 
 .logo {
-	width: 100px;
+  width: 100px;
   float: left;
 }
 
 .nav {
-	display: none;
+  display: none;
 }
 
 .nav-label {
-cursor: pointer;
-width: 35px;
-display: inline-block;
-position: absolute;
-top: 11px;
-right: 11px;
+  cursor: pointer;
+  width: 35px;
+  display: inline-block;
+  position: absolute;
+  top: 11px;
+  right: 11px;
 }
 
 .nav-check {
-	display: none;
+  display: none;
 }
 
 .nav-check:checked ~ .nav {
-display: block;
-position: absolute;
-z-index: 100;
-width: 100%;
+  display: block;
+  position: absolute;
+  z-index: 100;
+  width: 100%;
 }
 
 .nav-label img {
-display: block;
-width: 100%;
+  display: block;
+  width: 100%;
 }
 
 h1 {
-position: absolute;
-margin: 0;
+  position: absolute;
+  margin: 0;
 }
 
 .btn {
@@ -100,37 +100,39 @@ margin: 0;
 }
 
 .banner {
-	position: relative;
+  position: relative;
   max-height: 500px;
-	z-index: 1;
+  z-index: 1;
 }
 
 .banner h2 {
-	font-weight: 400;
-	font-size: 3rem;
+  font-weight: 400;
+  font-size: 3rem;
   margin: 0;
 }
 
 .banner p {
-	font-weight: 700;
+  font-weight: 700;
   font-size: 1.5rem;
   margin: 0 0 1em;
 }
 
 .content {
-	float: left;
-	position: relative;
-	text-align: left;
-	min-width: 300px;
-	z-index: 100;
-	width: 100%;
+  float: left;
+  position: relative;
+  text-align: left;
+  min-width: 300px;
+  z-index: 100;
+  width: 100%;
   display: block;
   position: relative;
-  background-image: url('../images/placeholder-16by9.svg');
+  background-image: url("../images/placeholder-16by9.svg");
   background-size: cover;
   margin-bottom: 3em;
   height: 56.25%;
-	padding: 1em;
+  padding: 1em;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 .banner .figure {
@@ -140,7 +142,7 @@ margin: 0;
   left: 50%;
   top: 50%;
   transform: translateY(-50%);
-	transform: translateX(-50%);
+  transform: translateX(-50%);
   z-index: 500;
   padding: 0 1rem;
 }
@@ -153,33 +155,32 @@ margin: 0;
   z-index: 1;
 }
 
-
 .daily-menu {
-	text-align: center;
+  text-align: center;
 }
 
 .daily-menu h2 {
-	font-weight: 300;
-	color: #009933;
+  font-weight: 300;
+  color: #093;
 }
 
-.daily-menu img{
-	display: inline-block;
-	max-width: 100%;
+.daily-menu img {
+  display: inline-block;
+  max-width: 100%;
 }
 
 .daily-menu-content {
-	display: inline-block;
-	padding: 4rem;
+  display: inline-block;
+  padding: 4rem;
 }
 
 .student-chefs {
-	color: #093;
+  color: #093;
 }
 
 .student-chefs h2 {
   font-weight: 300;
-	text-align: center;
+  text-align: center;
 }
 
 .student-chefs h3 {
@@ -187,8 +188,8 @@ margin: 0;
 }
 
 .student-chefs h4 {
-	font-weight: 300;
-	font-style: italic;
+  font-weight: 300;
+  font-style: italic;
 }
 
 .student-chefs img {
@@ -244,15 +245,15 @@ a {
 }
 
 .student-chefs .btn-ghost:hover {
-	  background-color: #093;
-	  border-color: #093;
-	  color: #fff;
+  background-color: #093;
+  border-color: #093;
+  color: #fff;
 }
 
 .nutrition h2 {
-	font-weight: 300;
-	color: #093;
-	text-align: center;
+  font-weight: 300;
+  color: #093;
+  text-align: center;
 }
 
 img {
@@ -302,26 +303,26 @@ img {
 }
 
 footer {
-	height: 80px;
-	background-color: #093;
+  height: 80px;
+  background-color: #093;
 }
 
 small {
-	color: #fff;
-	padding: 1rem;
-	margin-top: 1rem;
+  color: #fff;
+  padding: 1rem;
+  margin-top: 1rem;
 }
 
 .contact {
-	display: block;
-	position: relative;
-	/*background-image: url('images/placeholder-16by9.svg');*/
+  display: block;
+  position: relative;
+
 }
 
 .contact header {
   max-height: 500px;
   overflow: hidden;
-	position: relative;
+  position: relative;
 }
 
 .contact
@@ -340,9 +341,9 @@ small {
 }
 
 .banner-contact-content h2 {
-	top: 2rem;
-	font-weight: 300;
-	color: #093;
+  top: 2rem;
+  font-weight: 300;
+  color: #093;
 }
 
 .contact .img-flex {
@@ -355,29 +356,33 @@ small {
 }
 
 nav a {
-	display: block;
-	padding: .5em .75em;
-	color: #093;
-	text-decoration: none;
+  display: block;
+  padding: .5em .75em;
+  color: #093;
+  text-decoration: none;
 }
 
 nav a:hover {
-	background-color: #093;
-	color: #fff;
+  background-color: #093;
+  color: #fff;
 }
 
 .nav {
-	background-color: #fff;
-	border: 2px solid #093;
-	width: 100%;
-	padding: 0;
-	list-style-type: none;
-	position: absolute;
-	left: 0;
-	margin-top: 2em;
+  background-color: #fff;
+  border: 2px solid #093;
+  width: 100%;
+  padding: 0;
+  list-style-type: none;
+  position: absolute;
+  left: 0;
+  margin-top: 2em;
 }
 
 @media only screen and (min-width: 25em) {
+
+  .contact body {
+  margin: 0;
+  }
 
 }
 
@@ -403,7 +408,7 @@ nav a:hover {
 		width: 33.33%;
 	}
 
-	.student-chefs ul{
+	.student-chefs ul {
 		float: left;
 		width: 33.33%;
 	}
@@ -411,17 +416,19 @@ nav a:hover {
 
 @media only screen and (min-width: 60em) {
 
-	html {
+  html {
     font-size: 120%;
     line-height: 1.5;
   }
 
-	.nav-icon {
-		display: none;
-	}
+  .nav-icon {
+    display: none;
+  }
+
 	.masthead {
 		display: block;
 	}
+
 	.nav {
 		display: block;
 		z-index: 100;
@@ -436,6 +443,7 @@ nav a:hover {
 	.nav-label {
 		display: none;
 	}
+
 	nav li {
     display: inline-block;
     text-align: center;
@@ -447,18 +455,15 @@ nav a:hover {
     padding: 0;
   }
 
+	nav li {
+	  text-align: right;
+	}
 
-
-  nav li {
-    text-align: right;
-  }
-
-
-  header {
-    padding-left: 1rem;
-    padding-right: 1rem;
-    text-align: left;
-  }
+	header {
+	  padding-left: 1rem;
+	  padding-right: 1rem;
+	  text-align: left;
+	}
 
   h1,
   nav {
@@ -474,6 +479,7 @@ nav a:hover {
 }
 
 @media only screen and (min-width: 90em) {
+
 	html {
 		font-size: 130%;
 	}
