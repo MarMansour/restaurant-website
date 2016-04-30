@@ -28,6 +28,11 @@ header {
   text-align: right;
 }
 
+nav a:hover {
+	background-color: #093;
+	color: #fff;
+}
+
 .masthead {
 	display: block;
 	padding: 1rem;
@@ -53,6 +58,13 @@ right: 11px;
 
 .nav-check {
 	display: none;
+}
+
+.nav-check:checked ~ .nav {
+display: block;
+position: absolute;
+z-index: 100;
+width: 100%;
 }
 
 .nav-label img {
@@ -107,12 +119,18 @@ margin: 0;
 
 .content {
 	float: left;
-	width: 100%;
-	position: absolute;
-	display: inline-block;
+	position: relative;
 	text-align: left;
 	min-width: 300px;
 	z-index: 100;
+	width: 100%;
+  display: block;
+  position: relative;
+  background-image: url('../images/placeholder-16by9.svg');
+  background-size: cover;
+  margin-bottom: 3em;
+  height: 56.25%;
+	padding: 1em;
 }
 
 .banner .figure {
@@ -135,11 +153,6 @@ margin: 0;
   z-index: 1;
 }
 
-.content {
-  float: left;
-  width: 70%;
-  padding: 1em;
-}
 
 .daily-menu {
 	text-align: center;
@@ -299,6 +312,12 @@ small {
 	margin-top: 1rem;
 }
 
+.contact {
+	display: block;
+	position: relative;
+	/*background-image: url('images/placeholder-16by9.svg');*/
+}
+
 .contact header {
   max-height: 500px;
   overflow: hidden;
@@ -313,10 +332,17 @@ small {
   bottom: .8em;
   transform: translateX(-50%);
   z-index: 2;
-  width: 100%;
+  width: calc(100% - 2em);
   max-width: 45em;
   margin: 1em;
   padding: 1em 0 0 0;
+
+}
+
+.banner-contact-content h2 {
+	top: 2rem;
+	font-weight: 300;
+	color: #093;
 }
 
 .contact .img-flex {
@@ -326,6 +352,29 @@ small {
 
 .contact body {
   margin: 0;
+}
+
+nav a {
+	display: block;
+	padding: .5em .75em;
+	color: #093;
+	text-decoration: none;
+}
+
+nav a:hover {
+	background-color: #093;
+	color: #fff;
+}
+
+.nav {
+	background-color: #fff;
+	border: 2px solid #093;
+	width: 100%;
+	padding: 0;
+	list-style-type: none;
+	position: absolute;
+	left: 0;
+	margin-top: 2em;
 }
 
 @media only screen and (min-width: 25em) {
@@ -339,6 +388,25 @@ small {
     line-height: 1.4;
   }
 
+	.first-menu-img {
+		float: left;
+		width: 33.33%;
+	}
+
+	.menu-content {
+		float: left;
+		width: 33.33%;
+	}
+
+	.second-menu-img {
+		float: left;
+		width: 33.33%;
+	}
+
+	.student-chefs ul{
+		float: left;
+		width: 33.33%;
+	}
 }
 
 @media only screen and (min-width: 60em) {
@@ -348,10 +416,26 @@ small {
     line-height: 1.5;
   }
 
-	.nav {
+	.nav-icon {
+		display: none;
+	}
+	.masthead {
 		display: block;
 	}
+	.nav {
+		display: block;
+		z-index: 100;
+		top: -2rem;
+		position: absolute;
+		text-align: right;
+		left: 8rem;
+		width: calc(100% - 8rem);
+		border: none;
+	}
 
+	.nav-label {
+		display: none;
+	}
 	nav li {
     display: inline-block;
     text-align: center;
@@ -363,26 +447,12 @@ small {
     padding: 0;
   }
 
-  nav ul {
-    margin: 0;
-    padding: 0;
-  }
+
 
   nav li {
     text-align: right;
   }
 
-  nav a {
-    display: block;
-    padding: .5em .75em;
-    color: #009933;
-    text-decoration: none;
-  }
-
-  nav a:hover {
-    background-color: #009933;
-    color: #fff;
-}
 
   header {
     padding-left: 1rem;
